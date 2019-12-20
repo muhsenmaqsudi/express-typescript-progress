@@ -22,7 +22,7 @@ function bodyValidators(keys: string): RequestHandler {
   };
 }
 
-export function controller(routePrefix: string) {
+export function controller(routePrefix?: string) {
   return function(target: Function) {
     const router = AppRouter.getInstance();
 
